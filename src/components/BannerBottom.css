@@ -1,0 +1,44 @@
+.bannerBottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-bright-red);
+  color: white;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  margin-bottom: 0;
+  z-index: 100;
+  position: relative;
+}
+
+.bannerBottom__title {
+  width: 400px;
+}
+
+.bannerBottom > button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: var(--primary-bright-red);
+  box-shadow: 1px 5px 5px hsl(12, 66%, 69%);
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .bannerBottom {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .bannerBottom__title {
+    width: 100%;
+    text-align: center;
+  }
+}
